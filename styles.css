@@ -1,0 +1,175 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Cover CSS */
+#coverPin{
+    /* Change this to "fixed" to keep the banner pinned as you scroll */
+    position:relative;
+    height:20%;
+    width:100%;
+    top:0;
+    z-index:10;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+}
+#covercontainer{
+    position:relative;
+    height:90%;
+    width:100%;
+}
+#cover{
+    position:absolute;
+    background-image:url("ArchcraftImage.webp");
+    background-size:cover;
+    background-position:center;
+    height:100%;
+    width:100%;
+    filter:blur(3px);
+    opacity:0.8;
+}
+#covercontent{
+    padding-top: 3%;
+    position:relative;
+    color:orangered;
+    font-family: cursive;
+    font-size: 150%;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 
+                -2px -2px 4px rgba(0, 0, 0, 0.7), 
+                 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+/* Introduction Block */
+#introContainer {
+    padding-left:17%;
+    padding-right:17%;
+}
+.introBlock{
+    background-color: #1B1B2F;
+    font-family:'Franklin Gothic Medium';
+    font-size:120%;
+    color:rgb(226, 225, 225);
+    border-radius: 5px;
+    padding-left: 4%;
+    padding-right:4%;
+    transition: outline 0.1s;
+}
+.introBlock:hover{
+    outline:3px solid #4a90e2;
+}
+#Heading{
+    border-bottom: 2px solid grey;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 2%;
+}
+
+
+/* Adding colors to URLs and keywords */
+.highlight{
+    font-weight: bold;
+    color:orangered;
+}
+a:visited {
+    color: orangered;
+}
+a:link{
+    color:orangered;
+    text-decoration: none;
+}
+a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+
+
+
+.projectContainer{
+    display:flex;
+    justify-content: space-between;
+    margin-top:5%;
+    margin-left:3%;
+    margin-right:3%;
+}
+
+/* Image Container */
+.projectCard{
+    flex:1;
+    border:3px solid rgb(112, 112, 112);
+    border-radius: 10px;
+    background-image: url("ArchScript.png");
+    background-repeat: no-repeat;
+    transition: opacity 0.1s ease;
+}
+.projectCard:hover{
+    border:3px solid #4a90e2;
+}
+.projectCard img {
+    transition: opacity 0.1s ease; 
+}
+.projectCard:hover img {
+    opacity: 0.7;
+}
+
+.projectCardMirrored{
+    flex:1;
+    border:3px solid rgb(112, 112, 112);
+    border-radius: 10px;
+    background-image: url("MacroScript.png");
+    background-repeat: no-repeat;
+    transition: opacity 0.1s ease;
+    padding:4%;
+}
+.projectCardMirrored:hover{
+    border:3px solid #4a90e2;
+}
+.projectCardMirrored img {
+    transition: opacity 0.1s ease; 
+}
+.projectCardMirrored:hover img {
+    opacity: 0.7;
+}
+
+
+/* Information Container */
+.informationCard{
+    flex:1;
+    padding:2%;
+    margin-left: 4%;
+    background-color: #1B1B2F;
+    font-family:'Franklin Gothic Medium';
+    font-size: 17px;
+    border-radius:10px;
+    transition: outline 0.05s ease;
+}
+.informationCard:hover{
+    outline:3px solid #4a90e2;
+}
+.subHeading{
+    border-bottom: 2px solid grey;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    font-family: 'Mullish', sans-serif; 
+    font-size: 150%;
+}
+.informationCardMirrored{
+    flex:1;
+    padding:2%;
+    margin-right:4%;
+    background-color: #1B1B2F;
+    font-family:'Franklin Gothic Medium';
+    font-size: 17px;
+    border-radius:10px;
+    transition: outline 0.05s ease;
+}
+.informationCardMirrored:hover{
+    outline:3px solid #4a90e2;
+}
